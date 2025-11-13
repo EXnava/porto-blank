@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>java script</title>
+</head>
+<body>
+  <header>
+       <a class="logo" href="#">Elfie</a>
+     <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="about-she.html" target="_blank">About She</a>
+        <a href="story.html">Story</a>
+        <a href="relationship.html">Relationship</a>
+     </nav>
+  </header>
+  <section class="home">
+    <div class="home-img">
+        <img src="images/main.jpg" alt="my-bini">
+    </div>
+     <div class="content">
+      <h1>Hi it's <span>Elfaria</span></h1>
+      <h3 class="typing-text">She is <span></span></h3>
+      <br>
+        <p>lorem ipsum dollor sit amet lorem ipsum dollor sit amet lorem ipsum dollor sit amet
+          lorem ipsum dollor sit amet lorem ipsum dollor sit amet lorem ipsum dollor sit amet
+          lorem ipsum dollor sit amet lorem ipsum dollor sit amet lorem ipsum dollor sit amet
+          lorem ipsum dollor sit amet lorem ipsum dollor sit amet lorem ipsum dollor sit amet
+        </p>
+     </div>
+  </section>
+
+
+<script>
+  /* membuat web intraktif dengan "click" */
+  const img=document.querySelector('img');
+  let aktif = false;
+
+  img.addEventListener('click',() =>{
+    if(aktif){
+    img.setAttribute("src",'images/main.jpg');}
+  else {
+    img.setAttribute("src",'images/my_bini.jpg');
+  }
+  aktif = !aktif;
+  }); 
+</script>     
+
+
+
+
+</body>
+</html>

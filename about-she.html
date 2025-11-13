@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about-she.css">
+    <title>about she</title>
+</head>
+<body>
+     <header>
+       <a class="logo" href="#">Elfie</a>
+     <nav>
+         <a href="index.html" target="_blank">Home</a>
+         <a class="active" href="#">About She</a>
+         <a href="story.html">Story</a>
+         <a href="relationship.html">Relationship</a>
+     </nav>
+  </header>
+  <section>
+    <div class="home">
+      <div class="home-content">
+        <div class="gallery">  
+         <img src="images/elfaria1.jpg" alt="">
+
+         <img  src="images/elfaria2.jpg" alt="">
+
+         <img src="images/elfaria3.jpg" alt="">
+        </div>
+      </div>
+      <div class="text-content">
+        <h2>❄️ Latar Belakang Elfaria Albis Serfort</h2>
+        
+        <p><span>Elfaria Serfort </span>adalah sosok penyihir agung dari keluarga bangsawan kuno yang dikenal karena darah sihir suci yang mengalir dalam garis keturunannya.<br> 
+           Dibesarkan di Menara <span>Akademi Sihir Westoria</span>, 
+           Elfaria tumbuh sebagai murid berbakat yang menguasai sihir tingkat tinggi jauh sebelum usianya menginjak remaja.
+        </p><br>
+
+        <p>
+          Namun, di balik senyum lembut dan tutur katanya yang anggun, 
+          tersembunyi beban tanggung jawab besar—melindungi keseimbangan antara dunia manusia dan dunia roh.Ia dipercaya sebagai <span>“Penyambung Cahaya,”</span> 
+          seseorang yang mampu menyalakan kekuatan ilahi di tengah kegelapan yang mengancam.
+        </p><br>
+
+        <p><span>Kehidupannya berubah saat ia bertemu Will Serfort</span>,seorang pemuda tanpa bakat sihir namun memiliki tekad sekuat baja. 
+           Pertemuan itu menjadi awal dari kisah persahabatan, pengorbanan, dan cinta yang diam-diam tumbuh di antara mereka—dua jiwa yang berbeda,<br> 
+           namun saling melengkapi seperti cahaya dan pedang.
+          </p>
+      </div>
+    </div>
+  </section>
+
+<script>
+const img =document.querySelectorAll('.gallery img');
+
+img.forEach((img, index) =>{
+  let toggled = false;
+
+  img.addEventListener('click',() =>{
+    if (!toggled){
+       img.setAttribute('src',`images/elfie${index + 1}.jpg`);
+    } else {
+       img.setAttribute('src',`images/elfaria${index + 1}.jpg`);
+    }
+     toggled = !toggled;33
+  });
+  
+});
+
+
+
+</script>
+
+</body>
+</html>
