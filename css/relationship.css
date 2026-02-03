@@ -101,7 +101,9 @@ section {
     gap: 4rem;
     
 }
-
+.judul-content{
+    font-size: 30px;
+}
 h2 {
     color: rgb(111,212,255);
     display: flex;
